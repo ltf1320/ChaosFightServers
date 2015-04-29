@@ -6,8 +6,10 @@ class MainServer
 {
     public:
         MainServer();
+        void startServer();
         ~MainServer();
     protected:
+
     private:
 };
 

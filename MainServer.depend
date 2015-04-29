@@ -7,9 +7,10 @@
 1429620608 /home/liu/code/ChaosFightServersL/include/Console.h
 	<string>
 
-1429619821 source:/home/liu/code/ChaosFightServersL/src/mainServer/main.cpp
+1430276277 source:/home/liu/code/ChaosFightServersL/src/mainServer/main.cpp
 	<iostream>
 	<mainServer/MainServerConsole.h>
+	<encapsulation_mysql.h>
 
 1429620615 /home/liu/code/ChaosFightServersL/include/mainServer/MainServerConsole.h
 	"Console.h"
@@ -22,4 +23,42 @@
 	"msg_t.h"
 
 1421917716 /home/liu/code/ChaosFightServersL/include/msg_t.h
+
+1429622919 source:/home/liu/code/ChaosFightServersL/src/mainServer/MainServer.cpp
+	"MainServer.h"
+
+1429622919 /home/liu/code/ChaosFightServersL/include/mainServer/MainServer.h
+
+1430276213 /home/liu/code/ChaosFightServersL/include/encapsulation_mysql.h
+	<iostream>
+	<cassert>
+	<set>
+	<sys/shm.h>
+	<string>
+	<vector>
+	<stdio.h>
+	<string>
+	<vector>
+	<map>
+	<time.h>
+	<stdlib.h>
+	<memory>
+	<iconv.h>
+	<dlfcn.h>
+	<mysql/mysql.h>
+
+1430276326 source:/home/liu/code/ChaosFightServersL/src/encapsulation_mysql.cpp
+	<stdio.h>
+	<string>
+	<string.h>
+	<iostream>
+	<fstream>
+	<vector>
+	<cassert>
+	<set>
+	<map>
+	<stdio.h>
+	<dirent.h>
+	<sys/types.h>
+	"encapsulation_mysql.h"
 

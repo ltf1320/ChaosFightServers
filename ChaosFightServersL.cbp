@@ -50,17 +50,22 @@
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
+			<Add option="mysql_config --cflags" />
+			<Add directory="/usr/include/mysql" />
 		</Compiler>
+		<Linker>
+			<Add option="mysql_config --libs" />
+		</Linker>
 		<Unit filename="include/Console.h" />
-		<Unit filename="include/TaskPool.h" />
 		<Unit filename="include/common.h" />
 		<Unit filename="include/msg_t.h">
 			<Option compile="1" />
 			<Option link="1" />
 		</Unit>
+		<Unit filename="include/sockBuffer.h" />
 		<Unit filename="src/Console.cpp" />
-		<Unit filename="src/TaskPool.cpp" />
 		<Unit filename="src/msg_t.cpp" />
+		<Unit filename="src/sockBuffer.cpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />
