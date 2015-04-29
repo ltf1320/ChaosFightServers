@@ -1,0 +1,4 @@
+taskpool
+mysql
+mainServer epoll+taskpool
+gameServer multiThread

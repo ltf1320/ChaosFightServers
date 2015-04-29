@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1429620528 source:/home/liu/code/ChaosFightServersL/src/Console.cpp
+	"Console.h"
+	<stdlib.h>
+	<iostream>
+
+1429620608 /home/liu/code/ChaosFightServersL/include/Console.h
+	<string>
+
+1429621769 source:/home/liu/code/ChaosFightServersL/src/gameServer/main.cpp
+	<iostream>
+	<mainServer/MainServerConsole.h>
+	"common.h"
+
+1429620615 /home/liu/code/ChaosFightServersL/include/mainServer/MainServerConsole.h
+	"Console.h"
+
+1429621748 /home/liu/code/ChaosFightServersL/include/common.h
+	<string>
+
