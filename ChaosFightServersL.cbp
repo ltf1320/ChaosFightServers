@@ -57,13 +57,18 @@
 			<Add option="mysql_config --libs" />
 		</Linker>
 		<Unit filename="include/Console.h" />
+		<Unit filename="include/DataBaseHandle.h" />
 		<Unit filename="include/common.h" />
+		<Unit filename="include/encapsulation_mysql.h" />
 		<Unit filename="include/msg_t.h">
 			<Option compile="1" />
 			<Option link="1" />
 		</Unit>
 		<Unit filename="include/sockBuffer.h" />
 		<Unit filename="src/Console.cpp" />
+		<Unit filename="src/DataBaseHandle.cpp" />
+		<Unit filename="src/ThreadPool.cpp" />
+		<Unit filename="src/encapsulation_mysql.cpp" />
 		<Unit filename="src/msg_t.cpp" />
 		<Unit filename="src/sockBuffer.cpp" />
 		<Extensions>
