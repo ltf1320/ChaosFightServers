@@ -36,13 +36,13 @@ CEncapMysql::~CEncapMysql() {
 }
 
 int CEncapMysql::Connect(const char* szDbIp, const char* szUser,
-        const char* szPassword) {
+        const char* szPassword,const char *dbName) {
     SaveParam(szDbIp, szUser, szPassword);
     //先判断是否已经连接了, 防止重复连接
     if (IsConnected())
         return 0;
     //连接数据库
-    if (mysql_real_connect(&m_connection, szDbIp, szUser, szPassword, NULL, 0,
+    if (mysql_real_connect(&m_connection, szDbIp, szUser, szPassword,dbName, 0,
             NULL, 0) == NULL) {
         ERRMSG2("%s", mysql_error(&m_connection));
         return -1;

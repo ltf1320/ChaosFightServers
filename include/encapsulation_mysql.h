@@ -39,7 +39,7 @@ public:
     ~CEncapMysql();
 public:
 
-    int Connect(const char* szDbIp, const char* szUser, const char* szPassword);
+    int Connect(const char* szDbIp, const char* szUser, const char* szPassword,const char *dbName);
 
     void CloseConnect();
 

@@ -7,7 +7,7 @@
 1429620608 /home/liu/code/ChaosFightServersL/include/Console.h
 	<string>
 
-1430276277 source:/home/liu/code/ChaosFightServersL/src/mainServer/main.cpp
+1430572066 source:/home/liu/code/ChaosFightServersL/src/mainServer/main.cpp
 	<iostream>
 	<mainServer/MainServerConsole.h>
 	<encapsulation_mysql.h>
@@ -24,12 +24,27 @@
 
 1421917716 /home/liu/code/ChaosFightServersL/include/msg_t.h
 
-1429622919 source:/home/liu/code/ChaosFightServersL/src/mainServer/MainServer.cpp
+1430572075 source:/home/liu/code/ChaosFightServersL/src/mainServer/MainServer.cpp
 	"MainServer.h"
+	<sys/socket.h>
+	<sys/epoll.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<fcntl.h>
+	<unistd.h>
+	<stdio.h>
+	<errno.h>
+	<string.h>
+	<iostream>
 
-1429622919 /home/liu/code/ChaosFightServersL/include/mainServer/MainServer.h
+1430570044 /home/liu/code/ChaosFightServersL/include/mainServer/MainServer.h
+	<map>
+	<mutex>
+	"ThreadPool.h"
+	"Client.h"
+	<string>
 
-1430276213 /home/liu/code/ChaosFightServersL/include/encapsulation_mysql.h
+1430569495 /home/liu/code/ChaosFightServersL/include/encapsulation_mysql.h
 	<iostream>
 	<cassert>
 	<set>
@@ -47,7 +62,7 @@
 	<dlfcn.h>
 	<mysql/mysql.h>
 
-1430276326 source:/home/liu/code/ChaosFightServersL/src/encapsulation_mysql.cpp
+1430566193 source:/home/liu/code/ChaosFightServersL/src/encapsulation_mysql.cpp
 	<stdio.h>
 	<string>
 	<string.h>
@@ -61,4 +76,56 @@
 	<dirent.h>
 	<sys/types.h>
 	"encapsulation_mysql.h"
+
+1430571513 source:/home/liu/code/ChaosFightServersL/src/Client.cpp
+	"Client.h"
+	"DataBaseHandle.h"
+	"MainServer.h"
+	<sys/socket.h>
+	<cstring>
+
+1430571494 /home/liu/code/ChaosFightServersL/include/Client.h
+	"sockBuffer.h"
+	<string>
+
+1421775158 /home/liu/code/ChaosFightServersL/include/sockBuffer.h
+	<msg_t.h>
+	<pthread.h>
+	"common.h"
+
+1430571075 /home/liu/code/ChaosFightServersL/include/common.h
+	<string>
+
+1430570913 /home/liu/code/ChaosFightServersL/include/DataBaseHandle.h
+	"encapsulation_mysql.h"
+
+1429691351 /home/liu/code/ChaosFightServersL/include/ThreadPool.h
+	<thread>
+	<condition_variable>
+	<mutex>
+	<functional>
+	<vector>
+	"ThreadSafeQueue.h"
+
+1429701742 /home/liu/code/ChaosFightServersL/include/ThreadSafeQueue.h
+	<queue>
+	<mutex>
+
+1421912728 source:/home/liu/code/ChaosFightServersL/src/sockBuffer.cpp
+	"sockBuffer.h"
+	<cstring>
+	<iostream>
+
+1429701806 source:/home/liu/code/ChaosFightServersL/src/ThreadPool.cpp
+	"ThreadPool.h"
+
+1429692392 source:/home/liu/code/ChaosFightServersL/src/ThreadSafeQueue.cpp
+	"ThreadSafeQueue.h"
+
+1429621872 source:/home/liu/code/ChaosFightServersL/src/common.cpp
+	"common.h"
+
+1430571778 source:/home/liu/code/ChaosFightServersL/src/DataBaseHandle.cpp
+	"DataBaseHandle.h"
+	<string>
 
