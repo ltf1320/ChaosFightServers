@@ -122,6 +122,7 @@ int CEncapMysql::ModifyQuery(const char* szSQL) {
         ERRMSG2("%s", "还没有建立连接");
         return -2;
     }
+    FreePreResult();
     try //这些语句与连接有关，出异常时就重连
     {
         //查询, 实际上开始真正地修改数据库

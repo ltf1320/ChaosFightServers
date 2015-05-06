@@ -14,6 +14,7 @@
 #include <errno.h>
 #include <string.h>
 #include <iostream>
+#include "DataBaseHandle.h"
 
 MainServer* MainServer::instance=new MainServer();
 ThreadPool* MainServer::threadPool=NULL;
@@ -138,6 +139,17 @@ void MainServer::listenThread()
         }
     }
 }
+
+bool MainServer::login(const char* userName, const char* password)
+{
+    return DataBaseHandle::getInstance()->login(userName,password);
+}
+
+bool MainServer::regist(const char* userName, const char* password)
+{
+    return DataBaseHandle::getInstance()->regist(userName,password);
+}
+
 
 void MainServer::addClient(Client* client)
 {

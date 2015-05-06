@@ -2,6 +2,7 @@
 #define MAINSERVERCONSOLE_H
 
 #include "Console.h"
+#include "MainServer.h"
 using namespace std;
 class MainServerConsole : public Console
 {

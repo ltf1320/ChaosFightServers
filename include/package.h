@@ -57,7 +57,7 @@ struct ChooseHeroReq{
 
 #define ___placeholder___ 7
 
-struct PlayerInfo{
+struct NetPlayerInfo{
 	char player_nick_name[10];
 	int role_id;
 };
@@ -106,7 +106,7 @@ struct GameResult{
 
 #define GAME_RES_RSP 12
 struct GameResRsp{
-	struct GameResult result_set[6]; //player0-5 战斗结算rating信息	
+	struct GameResult result_set[6]; //player0-5 战斗结算rating信息
 };
 
 #define GAME_ENTER_REQ 14

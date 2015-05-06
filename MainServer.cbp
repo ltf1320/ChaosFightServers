@@ -25,11 +25,13 @@
 		<Unit filename="include/Client.h" />
 		<Unit filename="include/Console.h" />
 		<Unit filename="include/DataBaseHandle.h" />
+		<Unit filename="include/PlayerInfo.h" />
 		<Unit filename="include/ThreadPool.h" />
 		<Unit filename="include/ThreadSafeQueue.h" />
 		<Unit filename="include/common.h" />
 		<Unit filename="include/encapsulation_mysql.h" />
 		<Unit filename="include/mainServer/MainServer.h" />
+		<Unit filename="include/mainServer/MainServerConsole.h" />
 		<Unit filename="include/message.h">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
@@ -40,6 +42,7 @@
 		<Unit filename="src/Client.cpp" />
 		<Unit filename="src/Console.cpp" />
 		<Unit filename="src/DataBaseHandle.cpp" />
+		<Unit filename="src/PlayerInfo.cpp" />
 		<Unit filename="src/ThreadPool.cpp" />
 		<Unit filename="src/ThreadSafeQueue.cpp" />
 		<Unit filename="src/common.cpp" />

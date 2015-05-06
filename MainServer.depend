@@ -12,19 +12,20 @@
 	<mainServer/MainServerConsole.h>
 	<encapsulation_mysql.h>
 
-1429620615 /home/liu/code/ChaosFightServersL/include/mainServer/MainServerConsole.h
+1430917545 /home/liu/code/ChaosFightServersL/include/mainServer/MainServerConsole.h
 	"Console.h"
+	"MainServer.h"
 
-1429620570 source:/home/liu/code/ChaosFightServersL/src/mainServer/MainServerConsole.cpp
+1430917582 source:/home/liu/code/ChaosFightServersL/src/mainServer/MainServerConsole.cpp
 	"mainServer/MainServerConsole.h"
 	<iostream>
 
 1429622745 source:/home/liu/code/ChaosFightServersL/src/msg_t.cpp
 	"msg_t.h"
 
-1421917716 /home/liu/code/ChaosFightServersL/include/msg_t.h
+1430574313 /home/liu/code/ChaosFightServersL/include/msg_t.h
 
-1430572075 source:/home/liu/code/ChaosFightServersL/src/mainServer/MainServer.cpp
+1430917520 source:/home/liu/code/ChaosFightServersL/src/mainServer/MainServer.cpp
 	"MainServer.h"
 	<sys/socket.h>
 	<sys/epoll.h>
@@ -36,15 +37,16 @@
 	<errno.h>
 	<string.h>
 	<iostream>
+	"DataBaseHandle.h"
 
-1430570044 /home/liu/code/ChaosFightServersL/include/mainServer/MainServer.h
+1430917323 /home/liu/code/ChaosFightServersL/include/mainServer/MainServer.h
 	<map>
 	<mutex>
 	"ThreadPool.h"
 	"Client.h"
 	<string>
 
-1430569495 /home/liu/code/ChaosFightServersL/include/encapsulation_mysql.h
+1430919600 /home/liu/code/ChaosFightServersL/include/encapsulation_mysql.h
 	<iostream>
 	<cassert>
 	<set>
@@ -62,7 +64,7 @@
 	<dlfcn.h>
 	<mysql/mysql.h>
 
-1430566193 source:/home/liu/code/ChaosFightServersL/src/encapsulation_mysql.cpp
+1430918349 source:/home/liu/code/ChaosFightServersL/src/encapsulation_mysql.cpp
 	<stdio.h>
 	<string>
 	<string.h>
@@ -93,11 +95,12 @@
 	<pthread.h>
 	"common.h"
 
-1430571075 /home/liu/code/ChaosFightServersL/include/common.h
+1430916543 /home/liu/code/ChaosFightServersL/include/common.h
 	<string>
 
-1430570913 /home/liu/code/ChaosFightServersL/include/DataBaseHandle.h
+1430917215 /home/liu/code/ChaosFightServersL/include/DataBaseHandle.h
 	"encapsulation_mysql.h"
+	"PlayerInfo.h"
 
 1429691351 /home/liu/code/ChaosFightServersL/include/ThreadPool.h
 	<thread>
@@ -125,7 +128,13 @@
 1429621872 source:/home/liu/code/ChaosFightServersL/src/common.cpp
 	"common.h"
 
-1430571778 source:/home/liu/code/ChaosFightServersL/src/DataBaseHandle.cpp
+1430919576 source:/home/liu/code/ChaosFightServersL/src/DataBaseHandle.cpp
 	"DataBaseHandle.h"
 	<string>
+
+1430916673 /home/liu/code/ChaosFightServersL/include/PlayerInfo.h
+	"common.h"
+
+1430916470 source:/home/liu/code/ChaosFightServersL/src/PlayerInfo.cpp
+	"PlayerInfo.h"
 

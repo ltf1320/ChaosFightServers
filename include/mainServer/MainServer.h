@@ -15,6 +15,8 @@ class MainServer
         Client* getClient(int sock);
         void addClient(Client *client);
         void removeClient(int sock);
+        bool login(const char* userName,const char* password);
+        bool regist(const char* userName,const char* password);
         static void onMessageRecv(Msg_t *msg,int sock);
         static void listenThread();
     protected:

@@ -53,6 +53,9 @@ public:
 
     char* GetField(const char* szFieldName);
 
+    char* GetField(unsigned int iFieldIndex);
+
+    bool IsConnected();
 ////////连接池那个类需要用到这3个函数。  2011-01-20
 public:
     void SetUsed();
@@ -63,11 +66,8 @@ private:
 
 private:
 
-    bool IsConnected();
-
     void SetConnected(bool bTrueFalse);
 
-    char* GetField(unsigned int iFieldIndex);
 
     void FreePreResult();
 
